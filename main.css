@@ -1,0 +1,363 @@
+/* This is a clone of www.usabilityhub.com Just For education purpose only */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+
+/* Utility-Class */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --primary-text-color: #333;
+    --secondary-text-color: #577592;
+    --sign-up-color: #0b8df0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--primary-text-color);
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+    padding: 15px 15px;
+}
+
+a {
+    text-decoration: none;
+
+    display: inline-block;
+    color: var(--secondary-text-color);
+}
+
+.container {
+    padding-inline: 12vw;
+}
+
+.flex {
+    display: flex;
+
+}
+
+ul {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-links:hover {
+    color: rgb(57, 130, 255);
+
+}
+
+.secondary-button {
+    background-color: #0b8df0;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 12px 24px;
+    box-shadow: 0 0 6px var(--secondary-text-color);
+    text-align: center;
+}
+
+.secondary-button:hover {
+    background-color: darkblue;
+    border-color: darkblue;
+}
+
+.primary-button {
+
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 12px 24px;
+    box-shadow: 0 0 6px var(--secondary-text-color);
+    text-align: center;
+}
+
+.primary-button:hover {
+    border-color: #0b8df0;
+
+}
+
+header {
+    height: 650px;
+}
+
+
+
+
+/* TOP-BANNER */
+
+.top-banner {
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 7vh;
+    background-image: url(./assets/asset\ 32.png);
+    background-color: rgb(218, 65, 195);
+    background-size: 50vh;
+
+}
+
+.main-text {
+    color: white;
+}
+
+
+
+/* NAV-BANNER */
+
+.nav-banner {
+    margin-top: 3vh;
+    justify-content: space-between;
+}
+
+img {
+    justify-content: start;
+    width: 20vw;
+    height: min-content;
+}
+
+.links {
+    justify-content: end;
+    gap: 2vw;
+}
+
+/* Header Section */
+
+.main-header {
+    padding-top: 7vh;
+
+}
+
+.header-text {
+    padding-top: 15vh;
+    justify-content: flex-start;
+    width: 50%;
+
+}
+
+.header-para {
+    padding: 12px 0px 25px 0px;
+}
+
+.image {
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.header-image {
+    height: 500px;
+    width: 590px;
+}
+
+
+/* Companies Section */
+
+.main-para {
+    justify-content: center;
+    font-weight: 600;
+}
+
+.logos {
+    justify-content: space-between;
+
+}
+
+.logo {
+    padding-top: 20px;
+    height: 80px;
+    width: 120px;
+}
+
+/* Features-Section */
+
+.features-section {
+
+    background-image: url(./assets/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.feature {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25vh;
+}
+
+.row-1 {
+    flex-direction: row;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row-2 {
+    padding-top: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.features-box {
+    text-align: center;
+    flex-basis: 120px;
+
+}
+
+.six-feature-image {
+    height: 50px;
+}
+
+/* Big-Features-sections */
+
+.big-features-section {
+    padding-top: 80px;
+}
+
+.big-features-container {
+    gap: 50px;
+}
+
+.left-image img {
+    width: 40vw;
+
+}
+
+.right-text {
+    padding-top: 150px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.right-text p {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Examples-Section */
+
+.see-more-examples {
+    padding-top: 10px;
+
+}
+
+.examples {
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.examples-card {
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background-color: black;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(./assets/asset\ 36.jpeg);
+}
+
+.examples-card:hover {
+    box-shadow: 0 0 20px #888;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+
+/* CTA-Section */
+
+.cta-section {
+    padding-top: 120px;
+}
+
+
+.cta-section-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #183b54;
+
+}
+
+.cta-section-container h2 {
+    color: white;
+}
+
+
+/* Footer-Section */
+
+.footer-section {
+    justify-content: space-between;
+    padding-block: 50px;
+}
+
+.h4-padding {
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.products ul li {
+    padding-block: 5px;
+}
+
+
+/* Sub-Footer */
+
+
+.sub-footer {
+    background-color: #577592;
+}
+
+.sub-links {
+    justify-content: center;
+    gap: 50px;
+    padding-block: 20px;
+
+}
+
+.sub-links li a {
+    color: white;
+}
+
+
+/* --------------------------------------End Of Clone---------------------------------- */
